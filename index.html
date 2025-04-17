@@ -37,24 +37,11 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- fin Link favicon.ico -->
 
-    <!-- Script de facebook -->
-    <!-- <div id="fb-root">   </div> -->
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }
-        (document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- fin de script facebook -->
 </head>
 <body>
     <!-- Inicio del Header -->
-    <header>
-        <div class="contenedor">
+    <header class="header">
+        <div class="header__contenedor">
             <img class="logo" src="img/siatmedia_logo.png" alt="Siatmedia Marketing Digital">
             <input type="checkbox" id="menu-bar">
             <label class="icon-menu" for="menu-bar"></label>
@@ -120,73 +107,64 @@
         <!-- inicio de bloque principal -->
         <!-- Inicia el Boque de servicios rápidos -->
         <section id="servicios">
-            
-            <section id="blog1">
-                <h3>Nuestros Servicios</h3>
-                <p>
-                    Revisa nuestros trabajos
-                </p>
-                <div class="contenedor2">
-                    <article>
+                <h2>Nuestros Servicios</h2>
+                <div class="servicios__contenedor">
+                    <article class="servicios__articulo">
                         <h4>Diseño Web Apps</h4>
-                        <img src="img/iconos-10.png" alt="icono10" style="height:200px;width:200px;">
+                        <img src="img/iconos-10.png" alt="icono10">
                     </article>
-                    <article>
+                    <article class="servicios__articulo">
                         <h4>Redes Sociales</h4>
-                        <img src="img/iconos-11.png" alt="icono11" style="height:200px;width:200px;">
+                        <img src="img/iconos-11.png" alt="icono11">
                     </article>
-                    <article>
+                    <article class="servicios__articulo">
                         <h4>Marketing Digital</h4>
-                        <img src="img/iconos-12.png" alt="icono12" style="height:200px;width:200px;">
+                        <img src="img/iconos-12.png" alt="icono12">
                     </article>
-                    <article>
+                    <article class="servicios__articulo">
                         <h4>Desarrollo Software</h4>
-                        <img src="img/iconos-13.png" alt="icono13" style="height:200px;width:200px;">
+                        <img src="img/iconos-13.png" alt="icono13">
                     </article>
-                </div>
-                <div class="contenedor2">
-                    <article>
-                        <h4>Hosting & Dominio</h4>
-                        <img src="img/iconos-14.png" alt="icono14" style="height:200px;width:200px;">
+                    <article class="servicios__articulo">
+                        <h4>Hosting y Dominio</h4>
+                        <img src="img/iconos-14.png" alt="icono14">
                     </article>
-                    <article>
+                    <article class="servicios__articulo">
                         <h4>Estrategia Digital</h4>
-                        <img src="img/iconos-15.png" alt="icono15" style="height:200px;width:200px;">
+                        <img src="img/iconos-15.png" alt="icono15">
                     </article>
-                    <article>
+                    <article class="servicios__articulo">
                         <h4>Identidad corporativa</h4>
-                        <img src="img/iconos-16.png" alt="icono16" style="height:200px;width:200px;">
+                        <img src="img/iconos-16.png" alt="icono16">
                     </article>
-                    <article>
-                        <h4>Video Juegos</h4>
-                        <img src="img/iconos-16.png" alt="icono16" style="height:200px;width:200px;">
-                    </article>
-                </div>
-            </section>
-            <section id="blog2" style="background: MistyRose;">
-                <h3> Centros de Atención Siatmedia</h3>
-                <div class="contenedor3">
-                    <article>
-                        <img src="img/asesoria.jpg" alt="Asesoria Siatmedia" class="circular"
-                            style="width:340px; height:340px;">
-                        <h4>Asesoría</h4>
-                    </article>
-                    <article>
-                        <img src="img/servicios.jpg" alt="Servicios Siatmedia" class="circular"
-                            style="width:340px; height:340px;">
-                        <h4>Servicios</h4>
-                    </article>
-                    <article>
-                        <img src="img/web.jpg" alt="Servicios Siatmedia" class="circular" style="width:340px; height:340px;">
-                        <h4>Web</h4>
-                    </article>
-                    <article>
-                        <img src="img/escribenos.jpg" alt="Servicios Siatmedia" class="circular"
-                            style="width:340px; height:340px;">
-                        <h4>Escribenos</h4>
+                    <article class="servicios__articulo">
+                        <h4>Video <br>Juegos</h4>
+                        <img src="img/iconos-16.png" alt="icono16">
                     </article>
                 </div>
-            </section>
+        </section>
+
+        <section id="centro-atencion">
+            <h3> Centros de Atención <span class="span-naranja">Siatmedia</span></h3>
+            <div class="centro-atencion__container">
+                <article class="centro-atencion__articulo">
+                    <img src="img/asesoria.jpg" alt="Asesoria Siatmedia" class="centro-atencion__img">
+                    <h4>Asesoría</h4>
+                </article>
+                <article class="centro-atencion__articulo">
+                    <img src="img/servicios.jpg" alt="Servicios Siatmedia" class="centro-atencion__img">
+                    <h4>Servicios</h4>
+                </article>
+                <article class="centro-atencion__articulo">
+                    <img src="img/web.jpg" alt="Servicios Siatmedia" class="centro-atencion__img">
+                    <h4>Web</h4>
+                </article>
+                <article class="centro-atencion__articulo">
+                    <img src="img/escribenos.jpg" alt="Servicios Siatmedia" class="centro-atencion__img">
+                    <h4>Escribenos</h4>
+                </article>
+            </div>
+        </section>
             <!--Fin de centros de atencion -->
         
             <!-- Inicio de Tips -->
@@ -285,8 +263,7 @@
                     <h4 id="encuentranos6">Facebook</h4>
                     <iframe
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsiatmedia%2F&tabs=timeline&width=340&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                        width="300" height="400" style="border: none; overflow: hidden; background-color: transparent;"
-                        allow="encrypted-media">
+                        width="200" height="400"; allow="encrypted-media">
                     </iframe>
                 </div>
     
