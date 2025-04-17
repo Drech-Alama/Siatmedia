@@ -1,0 +1,129 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*/
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,500,600,700,800,900&display=swap&subset=latin-ext,vietnamese');
+
+
+@import url(header.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+@import url(contacto.css);
+@import url(encuentranos.css);
+
+/* -----Inicio - Declaración de Variables----- */
+
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-naranja: #ee7d15;
+    --color-gris-oscuro: #494949;
+    --color-gris-claro: #9b9b9b;
+}
+
+/* -----Fin - Declaración de Variables----- */
+
+
+/* -----Inicio - Reseteo de Estilos----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----Fin - Reseteo de Estilos----- */
+
+
+/* -----Inicio - Estilos del Body----- */
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+/* -----Fin - Estilos del Body----- */
+
+
+/* -----Inicio - Estilos Generales----- */
+
+h2 {
+    font-size: 1.8em;
+}
+h3 {
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+h5 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+section {
+    width: 100%;
+}
+
+#nosotros { 
+    text-align: center;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a{
+    text-decoration: none;
+    display: block;
+    padding: 50px;
+}
+/* Para el logotipo y el icono del menu */
+.logo .icon-menu {
+    margin: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+/* estilos del footer */
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    position: static;
+}
+
+.footer .social [class^="icon"] {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* -----Fin - Estilos Generales----- */

@@ -1,0 +1,120 @@
+/* Estilos para h3 y h4 dentro de cada sección */
+#blog h3, #blog h4,
+#blog1 h3, #blog1 h4,
+#blog2 h3, #blog2 h4,
+#blog3 h3, #blog3 h4 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Estilos para el contenedor dentro de cada sección */
+#blog .contenedor,
+#blog1 .contenedor,
+#blog2 .contenedor,
+#blog3 .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para los artículos dentro de cada sección */
+#blog article,
+#blog1 article,
+#blog2 article,
+#blog3 article {
+    margin: 15px;
+}
+
+/* Clases generales */
+.redondeo {
+    width: 100%;
+    border-radius: 20px;
+    border-color: aqua;
+}
+
+.circular {
+    width: 100%;
+    border-radius: 50%;
+    border-color: aqua;
+}
+
+/* Estilos para contenedores tipo "contenedor1" en cada sección */
+#blog .contenedor1,
+#blog1 .contenedor1,
+#blog2 .contenedor1,
+#blog3 .contenedor1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada sección */
+#blog,
+#blog1,
+#blog2,
+#blog3 {
+    margin-top: 0;
+    text-align: center;
+    color: gray;
+}
+
+/* Estilos para contenedores tipo "contenedor2" en cada sección */
+#blog .contenedor2,
+#blog1 .contenedor2,
+#blog2 .contenedor2,
+#blog3 .contenedor2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para contenedores tipo "contenedor3" en cada sección */
+#blog .contenedor3,
+#blog1 .contenedor3,
+#blog2 .contenedor3,
+#blog3 .contenedor3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#blog article img {
+    width: 200px;
+    animation: inclinar 2s ease-in-out infinite;
+}
+
+#blog1 article img {
+    width: 200px;
+    animation: agrandar 2s ease-in-out infinite;
+}
+
+#blog2 .contendero3 article img {
+    width: 150px;
+    background-color: aqua;
+}
+
+
+@keyframes inclinar {
+    0% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes agrandar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+

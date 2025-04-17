@@ -1,0 +1,99 @@
+/*
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap');
+*/
+/*
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
+*/
+/*
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi&display=swap');
+
+/* -----Inicio - Estilos del header----- */
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top:0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header label {
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--color-blanco);
+}
+
+/* -----Fin - Estilos del header----- */
+
+
+/* -----Inicio - Estilos del Menú----- */
+
+#menu-bar {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100%;
+    transition: all 0.5s;
+    background-color: var(--color-gris-oscuro);
+    transform: translateX(-100%);
+    margin-right: 200px;
+    font-size: 20px;
+}
+
+.menu a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--color-gris-claro);
+}
+.menu a:hover {
+    background: var(--color-naranja);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+/* -----Fin - Estilos del Menú----- */
+
+
+/* -----Inicio - Diseño Responsive - Desktop----- */
+
+@media(min-width:1024px){
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        display: flex;
+        background-color: transparent;
+    }
+    .menu a{
+        border: none;
+        font-size: 30px;
+        color: var(--color-blanco);
+    }
+    header label{
+        display: none;
+    }
+}
+
+/* -----Fin - Diseño Responsive - desktop----- */
