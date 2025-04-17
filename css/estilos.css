@@ -6,6 +6,7 @@
 
 @import url(header.css);
 @import url(banner.css);
+@import url(nosotros.css);
 @import url(blog.css);
 @import url(info.css);
 @import url(contacto.css);
@@ -53,10 +54,10 @@ h3 {
 }
 
 h4 {
-    font-size: 1.6em;
+    font-size: 1.2em;
 }
 h5 {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 p {
@@ -68,10 +69,6 @@ a {
 }
 section {
     width: 100%;
-}
-
-#nosotros { 
-    text-align: center;
 }
 
 .copy {
