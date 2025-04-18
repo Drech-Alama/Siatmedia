@@ -1,9 +1,29 @@
 #centro-atencion {
     text-align: center;
 }
+.centro-atencion__contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.centro-atencion__img {
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
 
 .centro-atencion__img {
-    width: 200px;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: block;
+}
+
+.centro-atencion__articulo h4 {
+    position: absolute;
+
 }
