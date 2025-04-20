@@ -1,7 +1,7 @@
 #servicios {
     margin: 0 auto;
     text-align: center;
-    background-color: var(--color-gris-claro);
+    background-color: var(--color-naranja);
 }
 
 #servicios h2 {
@@ -32,7 +32,7 @@
     line-height: 0.9;
     text-transform: uppercase;
     background-color: var(--color-negro);
-    color: var(--color-naranja);
+    color: var(--color-blanco);
     border-radius: 12px;
     position: relative;
     animation: agrandar 2s ease-in-out infinite;

@@ -25,14 +25,6 @@
 	font-weight: 300;
 	text-align: center;
 }
-.span-negrita {
-	font-weight: bold;
-}
-
-.span-naranja {
-	color: var(--color-naranja);
-	font-weight: bold;
-}
 
 .banner__enlace {
 	color: var(--color-blanco);

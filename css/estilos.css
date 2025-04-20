@@ -9,8 +9,9 @@
 @import url(nosotros.css);
 @import url(servicios.css);
 @import url(centro-atencion.css);
+@import url(noticias-otros.css);
 @import url(contacto.css);
-@import url(encuentranos.css);
+@import url(footer.css);
 
 /* -----Inicio - Declaración de Variables----- */
 
@@ -21,6 +22,19 @@
     --color-gris-oscuro: #494949;
     --color-gris-claro: #9b9b9b;
 }
+
+.span-negrita {
+	font-weight: bold;
+}
+
+.span-naranja {
+	color: var(--color-naranja);
+	font-weight: bold;
+}
+.span-negro {
+	color: var(--color-negro);
+}
+
 
 /* -----Fin - Declaración de Variables----- */
 
@@ -71,21 +85,7 @@ section {
     width: 100%;
 }
 
-.copy {
-    font-size: 20px;
-}
 
-.sociales{
-    width: 100%;
-    text-align: center;
-    font-size: 28px;
-}
-
-.sociales a{
-    text-decoration: none;
-    display: block;
-    padding: 50px;
-}
 /* Para el logotipo y el icono del menu */
 .logo .icon-menu {
     margin: 5px;
@@ -98,29 +98,5 @@ section {
 
 /* estilos del footer */
 
-footer .contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.footer {
-    padding: 10px;
-    text-align: center;
-    position: static;
-}
-
-.footer .social [class^="icon"] {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 10px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 40px;
-    cursor: pointer;
-}
 
 /* -----Fin - Estilos Generales----- */
