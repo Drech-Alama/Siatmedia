@@ -20,7 +20,8 @@
 }
 
 .banner__titulo {
-	width: 90vw;
+	width: 100vw;
+	padding: 0 20px;
 	font-size: 1.8em;
 	font-weight: 300;
 	text-align: center;
@@ -39,9 +40,15 @@
 	font-weight: bold;
 	border: 2px solid transparent;
 	transition: border .3s ease-in-out;
+	box-shadow: 0 5px 15px var(--color-naranja);
 }
 .banner__enlace:hover {
 	border: 2px solid var(--color-blanco);
+}
+
+.banner__contenedor-texto {
+	padding: 20px;
+	margin: 0 auto;
 }
 
 .banner__contenedor-texto .banner__parrafo {

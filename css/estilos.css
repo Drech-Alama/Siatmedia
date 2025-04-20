@@ -85,7 +85,9 @@ section {
     width: 100%;
 }
 
-
+li {
+    list-style: none;
+}
 /* Para el logotipo y el icono del menu */
 .logo .icon-menu {
     margin: 5px;
