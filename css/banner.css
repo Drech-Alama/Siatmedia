@@ -1,7 +1,7 @@
 /* -----Inicio - Estilos del banner----- */
 
 #banner {
-	position: relative;
+	
 }
 
 .banner__img {
@@ -9,34 +9,42 @@
 	height: 100vh;
 	object-fit: cover;
 	display: block;
+	position: relative;
+
 }
 
 .banner__contenedor {
 	position: absolute;
 	color: var(--color-blanco);
-	top: 16em;
+	width: 100%;
+	height: 100vh;
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%) translateY(-40%);
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .banner__titulo {
-	width: 100vw;
+	width: 100%;
 	padding: 0 20px;
 	font-size: 1.8em;
 	font-weight: 300;
 	text-align: center;
 }
 
+/* Estilos del enlace a whatsApp */
 .banner__enlace {
 	color: var(--color-blanco);
 	background-color: var(--color-naranja);
-	margin: 2em auto 5em auto;
 	display: block;
 	width: 9em;
 	padding: 5px 0;
 	text-align: center;
 	border-radius: 25px;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
 	border: 2px solid transparent;
 	transition: border .3s ease-in-out;
@@ -48,7 +56,7 @@
 
 .banner__contenedor-texto {
 	padding: 20px;
-	margin: 0 auto;
+	margin: 0 20px;
 }
 
 .banner__contenedor-texto .banner__parrafo {
@@ -56,8 +64,6 @@
 }
 
 .banner__contenedor-2 {
-	position: absolute;
-	bottom: 0;
 	background-color: var(--color-blanco);
 	width: 100%;
 	height: auto;

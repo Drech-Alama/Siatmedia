@@ -67,6 +67,13 @@
 /* -----Inicio - Diseño Responsive - Desktop----- */
 
 @media(min-width:1024px){
+    .header {
+        width: 100%;
+    }
+
+    .header__contenedor {
+        width: 100%;
+    }
     .menu {
         position: static;
         width: auto;
