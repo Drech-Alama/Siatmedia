@@ -54,9 +54,11 @@
 	border: 2px solid transparent;
 	transition: border .3s ease-in-out;
 	box-shadow: 0 5px 15px var(--color-naranja);
+	border: 2px solid var(--color-blanco);
+	transition: transform .3s linear;
 }
 .banner__enlace:hover {
-	border: 2px solid var(--color-blanco);
+	transform: scale(0.9);
 }
 
 .banner__contenedor-texto {
