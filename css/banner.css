@@ -10,7 +10,6 @@
 	object-fit: cover;
 	display: block;
 	position: relative;
-
 }
 
 .banner__contenedor {
@@ -26,7 +25,13 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
+.banner__titulo-contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5em;
+	margin-top: 4.5em;
+}
 .banner__titulo {
 	width: 100%;
 	padding: 0 20px;
@@ -55,12 +60,12 @@
 }
 
 .banner__contenedor-texto {
-	padding: 20px;
 	margin: 0 20px;
 }
 
 .banner__contenedor-texto .banner__parrafo {
 	line-height: 0.8;
+	padding: 0.5em 0;
 }
 
 .banner__contenedor-2 {
@@ -73,7 +78,7 @@
 	text-align: center;
 	font-weight: bold;
 	font-size: 0.8em;
-	padding: 15px 0;
+	padding: 0.7em 0;
 	color: var(--color-negro);
 }
 .banner__contenedor-2 .banner__span-naranja {

@@ -6,7 +6,7 @@
     <!-- Fin de Etiquetas configuración de region -->
 
     <!-- Etiquetas adaptabilidad y responsivo -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fin Etiquetas adaptabilidad y responsivo -->
 
     <!-- Etiquetas compatibilidad con navegadores antiguos -->
@@ -26,7 +26,6 @@
 
     <!-- Link de diseño -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" type="text/css" href="css/fontello.css">
     <!-- fin Link de diseño -->
 
     <!-- Link de iconos para web -->
@@ -40,18 +39,23 @@
 <body>
     <!-- Inicio del Header -->
     <header class="header">
-        <div class="header__contenedor">
-            <img class="logo" src="img/siatmedia_logo.png" alt="Siatmedia Marketing Digital">
-            <input type="checkbox" id="menu-bar">
-            <label  for="menu-bar"></label>
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#contacto">Contacto</a>
-                <a href="login/index.html">Iniciar Sesión</a>
-            </nav>
-        </div>
+        <nav class="header__nav">
+            <div class="header__logo-menu">
+                <a href="#">
+                    <img class="header__logo" src="img/siatmedia_logo.png" alt="Siatmedia Marketing Digital">
+                </a>
+                <button class="header__boton-abrir">&#9776;</button>
+            </div>
+            <ul class="header__menu">
+                <button class="header__boton-cerrar">&#10006;</button>
+                <li class="header__lista"><a class="header__enlace" href="index.html">Inicio</a></li>
+                <li class="header__lista"><a class="header__enlace" href="#nosotros">Nosotros</a></li>
+                <li class="header__lista"><a class="header__enlace" href="#servicios">Servicios</a></li>
+                <li class="header__lista"><a class="header__enlace" href="#servicios">Centros de Atención</a></li>
+                <li class="header__lista"><a class="header__enlace" href="#contacto">Contacto</a></li>
+                <li class="header__lista"><a class="header__enlace" href="#">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Final del Header -->
 
@@ -60,23 +64,21 @@
         <!-- Inicio del Banner -->
         <section id="banner">
             <img src="img/portada4.jpg" alt="portada siatmedia" class="banner__img">
-            <div class="container">
-                <div class="banner__contenedor">
-                    <h1 class="banner__titulo">
-                        <span class="span-negrita">Siatmedia</span>, adquiere poder <span class="span-naranja">ONLINE</span>
-                        para tu empresa
-                        <a href="#" class="banner__enlace">CONTÁCTANOS</a>
-                    </h1>
-                    <div class="banner__contenedor-texto">
-                        <h2 class="banner__h2">¿Necesitas un sitio web?</h2>
-                        <p class="banner__parrafo">Observamos las necesidades, las analizamos y convertimos en soluciones con
-                            Desarrollo Web y Apps para empresa.</p>
-                    </div>
-                    <div class="banner__contenedor-2">
-                        <p class="banner__parrafo">Marketing Digital | Redes Sociales | Desarrollo Software</p>
-                        <p class="banner__parrafo">Web Empresas | Hosting & Dominio | VideoJuegos | Apps</p>
-                        <p class="banner__parrafo banner__span-naranja">Tenemos el mejor plan de proyectos para tu empresa</p>
-                    </div>
+            <div class="banner__contenedor">
+                <div class="banner__titulo-contenedor">
+                    <h1 class="banner__titulo"><span class="span-negrita">Siatmedia</span>, adquiere poder <span class="span-naranja">ONLINE</span>
+                        para tu empresa</h1>
+                    <a href="#" class="banner__enlace">CONTÁCTANOS</a>
+                </div>
+                <div class="banner__contenedor-texto">
+                    <h2 class="banner__h2">¿Necesitas un sitio web?</h2>
+                    <p class="banner__parrafo">Observamos las necesidades, las analizamos y convertimos en soluciones con
+                        Desarrollo Web y Apps para empresa.</p>
+                </div>
+                <div class="banner__contenedor-2">
+                    <p class="banner__parrafo">Marketing Digital | Redes Sociales | Desarrollo Software</p>
+                    <p class="banner__parrafo">Web Empresas | Hosting & Dominio | VideoJuegos | Apps</p>
+                    <p class="banner__parrafo banner__span-naranja">Tenemos el mejor plan de proyectos para tu empresa</p>
                 </div>
             </div>
         </section>
@@ -199,15 +201,15 @@
             <div class="contacto__contenedor">
                 <div class="contacto__formulario-contenedor">
                     <form class="contacto__formulario" action="registro.php" method="POST">
-                        <label class="contacto">Nombre</label><br>
+                        <label for="nombre" class="contacto">Nombre</label><br>
                         <input type="text" name="nombre" placeholder="Ingrese sus nombres" class="contacto"><br>
-                        <label class="contacto">Apellido</label><br>
+                        <label for="apellido" class="contacto">Apellido</label><br>
                         <input type="text" name="apellido" placeholder="Ingrese sus apellidos"
                             class="contacto"><br>
-                        <label class="contacto">Correo</label><br>
+                        <label for="correo" class="contacto">Correo</label><br>
                         <input type="email" name="correo" class="contacto" placeholder="Ingrese su correo"><br>
-                        <label class="contacto">Mensaje</label><br>
-                        <textarea class="contacto" rows="6"></textarea><br>
+                        <label for="mensaje" class="contacto">Mensaje</label><br>
+                        <textarea name="mensaje" class="contacto" rows="6"></textarea><br>
                         <input type="submit" name="envia" value="Enviar" class="boton1">
                     </form>
                 </div>    
@@ -268,5 +270,6 @@
         </div>
     </footer>
     <!-- Fin de Pie -->
+    <script src="js/header.js"></script>
 </body>
 </html>

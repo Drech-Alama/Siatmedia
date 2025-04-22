@@ -11,8 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
 .footer__encuentranos-contenedor {
@@ -45,4 +44,7 @@
     margin: 15px 0;
     border: 1px solid var(--color-gris-claro);
     border-radius: 25px;
+}
+.footer__enlaces-contenedor {
+    margin: 25px 0;
 }
