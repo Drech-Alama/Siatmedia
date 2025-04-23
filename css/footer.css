@@ -4,9 +4,7 @@
     color: var(--color-blanco);
     padding: 25px 0;
 }
-#footer a {
-    color: var(--color-blanco);
-}
+
 .footer__texto-contenedor {
     display: flex;
     flex-wrap: wrap;
@@ -46,5 +44,26 @@
     border-radius: 25px;
 }
 .footer__enlaces-contenedor {
-    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__enlaces {
+    color: var(--color-blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-gris-claro);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 2em;
+    
+}
+
+.footer__enlaces:hover {
+    color: var(--color-negro);
+    background-color: var(--color-naranja);
 }

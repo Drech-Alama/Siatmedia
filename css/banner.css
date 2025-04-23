@@ -1,7 +1,7 @@
 /* -----Inicio - Estilos del banner----- */
 
 #banner {
-	
+	/* No se aplicó estilos al #banner */
 }
 
 .banner__img {
@@ -34,8 +34,8 @@
 }
 .banner__titulo {
 	width: 100%;
+	height: auto;
 	padding: 0 20px;
-	font-size: 1.8em;
 	font-weight: 300;
 	text-align: center;
 }
@@ -79,26 +79,38 @@
 .banner__contenedor-2 .banner__parrafo {
 	text-align: center;
 	font-weight: bold;
-	font-size: 0.8em;
 	padding: 0.7em 0;
 	color: var(--color-negro);
 }
 .banner__contenedor-2 .banner__span-naranja {
 	background-color: var(--color-naranja);
 	color: var(--color-blanco);
-	font-size: 0.9em;
 	width: 100%;
 	padding: 10px 0;
 }
 
+/* ----- Inicio Media Query tablet ----- */
 
-@media(min-width: 1024px) {
+@media(min-width: 768px) {
+	.banner__titulo-contenedor {
+		margin-top: 6.5em;
+	}
+
+	.banner__contenedor-texto {
+		margin-top: 7em;
+	}
+	.banner__enlace {
+		font-size: 1.5em;
+	}
+}
+
+
+/* @media(min-width: 1024px) {
 	#banner h1 {
 		margin-top: 70px;
-		font-size: 40px;
 	}
 
 	#banner p {
 		font-size: 15px;
 	}
-}
+} */

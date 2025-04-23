@@ -8,6 +8,7 @@
     width: 100%;
     height: 80px;
     top:0;
+    left: 0;
     z-index: 20;
 }
 
@@ -26,6 +27,7 @@
     background: none;
     color: var(--color-blanco);
     font-size: 1.8em;
+    cursor: pointer;
 }
 
 .header__menu {
@@ -57,59 +59,73 @@
     padding: 15px;
 }
 
+.header__lista:hover {
+    background-color: var(--color-naranja);
+}
+
 .header__enlace{
     color: var(--color-blanco);
+    padding: 20px 20px 0 0;
 }
 
-
-
-
-
-
-
-
-/* .active {
-    display: block;
-    position: absolute;
-    top: 80px;
-    background-color: #fff;
-    z-index: 20;
+.header__enlace:hover{
+    color: var(--color-negro);
 }
- */
-
-
-
-
 
 /* -----Fin - Estilos del Menú----- */
 
 
+/* -----Inicio - Diseño Responsive - Tablet ----- */
+
+@media (min-width:768px) {
+    .header__menu {
+        width: 50vw;
+    }
+}
+/* -----Fin - Diseño Responsive - Tablet ----- */
+
+
 /* -----Inicio - Diseño Responsive - Desktop----- */
 
-/* @media(min-width:1024px){
+@media(min-width:1024px){
     .header {
-        width: 100%;
-    }
-
-    .header__contenedor {
-        width: 100%;
-    }
-    .menu {
-        position: static;
-        width: auto;
-        height: auto;
-        transform: translateX(0%);
         display: flex;
-        background-color: transparent;
+        align-items: center;
+        justify-content: center;
     }
-    .menu a{
+    .header__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header__menu {
+        position: static;
+        transform: translateX(0);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+
+        background: none;
+    }
+    .header__lista {
+        padding: 0;
         border: none;
-        font-size: 30px;
-        color: var(--color-blanco);
     }
-    header label{
+    .header__enlace {
+        padding: 10px;
+        margin: 0 15px;
+    }
+    .header__boton-abrir, .header__boton-cerrar {
         display: none;
     }
-} */
+    h2, p {
+        text-align: center;
+    }
+}
 
 /* -----Fin - Diseño Responsive - desktop----- */
