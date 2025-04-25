@@ -158,10 +158,10 @@ input[type="submit"]:hover {
 /* Tablets (426px a 768px) */
 @media (min-width: 426px) and (max-width: 768px) {
     h1 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
     h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
     p {
         font-size: 1.5em;
