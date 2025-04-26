@@ -1,101 +1,64 @@
 /* -----Inicio - Estilos del banner----- */
-
 #banner {
-	/* No se aplicó estilos al #banner */
-}
-
-.banner__img {
+	background: linear-gradient(transparent, rgba(0, 0, 0)), url(/img/portada4.jpg);
 	width: 100%;
 	height: 100vh;
-	object-fit: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
+
+/* ----- Inicio - Estilos al Contenedor del Banner ----- */
+
 .banner__contenedor {
-	position: absolute;
 	color: var(--color-blanco);
 	width: 100%;
 	height: 100%;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 1.5em;
 }
-.banner__titulo-contenedor {
+.banner__titulo-enlace-contenedor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1.5em;
+	gap: 1em;
 }
 .banner__titulo {
-	width: 100%;
-	height: auto;
-	padding: 0 20px;
 	font-weight: 300;
 	text-align: center;
+	margin: 0 20px;
 }
 
-.banner__titulo {
-	margin: 0 auto;
-}
 /* Estilos del enlace a whatsApp */
 .banner__enlace {
 	color: var(--color-blanco);
 	background-color: var(--color-naranja);
 	display: block;
-	width: 9em;
-	padding: 5px 0;
-	text-align: center;
+	padding: 0.5em 1.5em;
 	border-radius: 25px;
-	font-size: 1em;
-	font-weight: bold;
-	border: 2px solid transparent;
-	transition: border .3s ease-in-out;
+	text-align: center;
+	border: 3px solid var(--color-blanco);
 	box-shadow: 0 5px 15px var(--color-naranja);
-	border: 2px solid var(--color-blanco);
+	font-weight: bold;
 	transition: transform .3s linear;
 }
 .banner__enlace:hover {
 	transform: scale(0.9);
 }
 
-.banner__contenedor-texto {
-	/* margin: 0 20px; */
-	background-color: red;
+.banner__descripcion {
 	text-align: center;
-	max-width: 90%;
+	margin: 0 20px;
 }
 
-.banner__contenedor-texto .banner__parrafo {
-	line-height: 0.8;
+.banner__descripcion .banner__parrafo {
 	padding: 0.5em 0;
 }
 
-.banner__contenedor-2 {
-	background-color: var(--color-blanco);
-	width: 100%;
-	height: auto;
-}
-
-.banner__contenedor-2 .banner__parrafo {
-	text-align: center;
-	font-weight: bold;
-	padding: 0.7em 0;
-	color: var(--color-negro);
-}
-.banner__contenedor-2 .banner__span-naranja {
-	background-color: var(--color-naranja);
-	color: var(--color-blanco);
-	width: 100%;
-	padding: 10px 0;
-}
 
 /* ----- Inicio Media Query tablet ----- */
 
