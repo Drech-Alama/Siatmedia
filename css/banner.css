@@ -62,19 +62,20 @@
 
 /* ----- Inicio Media Query tablet ----- */
 
-@media(min-width: 768px) {
-	.banner__enlace {
-		font-size: 1.5em;
+@media (min-width: 768px) and (max-width: 1023px) {
+	.banner__titulo {
+		width: 80%;
+	}
+	.banner__descripcion {
+		width: 60%;
 	}
 }
 
-
-/* @media(min-width: 1024px) {
-	#banner h1 {
-		margin-top: 70px;
+@media (min-width:1024px) {
+	.banner__titulo {
+		width: 70%;
 	}
-
-	#banner p {
-		font-size: 15px;
+	.banner__descripcion {
+		width: 25%;
 	}
-} */
+}
