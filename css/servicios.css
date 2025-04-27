@@ -1,7 +1,7 @@
 #servicios {
-    padding: 25px 0;
+    padding: 120px 0;
     text-align: center;
-    background-color: var(--color-naranja);
+    background: linear-gradient(var(--color-naranja) 50%, var(--color-gris-claro));
 }
 
 #servicios h2 {
@@ -11,7 +11,7 @@
 
 #servicios img {
     width: 100px;
-    animation: rotar 3s ease-in-out infinite;
+    animation: rotar 4s ease-in-out infinite;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5))
 }
 
@@ -29,7 +29,6 @@
 .servicios__articulo h4 {
     margin: 25px auto;
     padding: 8px;
-    line-height: 0.9;
     text-transform: uppercase;
     background-color: var(--color-negro);
     color: var(--color-blanco);
@@ -46,6 +45,16 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid var(--color-negro);
+}
+
+.servicios__parrafo-contenedor {
+    margin: 3em 0;
+    color: var(--color-blanco);
+}
+
+.servicios__h3 {
+    margin: 1.5em 0;
+    color: var(--color-blanco);
 }
 
 @keyframes rotar {
