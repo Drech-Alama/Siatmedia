@@ -40,28 +40,28 @@
 	margin: 0 auto;
 }
 .nosotros__img-contenedor--1 {
-	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(/img/mercado.jpg);
+	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(../img/mercado.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .nosotros__img-contenedor--2 {
-	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(/img/cliente.jpg);
+	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(../img/cliente.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .nosotros__img-contenedor--3 {
-	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(/img/imagen.jpg);
+	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(../img/imagen.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .nosotros__img-contenedor--4 {
-	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(/img/disponible.jpg);
+	background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 70%), url(../img/disponible.jpg);
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
