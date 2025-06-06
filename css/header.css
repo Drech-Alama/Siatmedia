@@ -1,0 +1,120 @@
+/* Estilos del header */
+
+
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    padding: 0 15px;
+}
+
+.header__navbar {
+    text-align: center;
+    width: 100%;
+}
+
+.header__logo-hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background: none;
+}
+#menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    padding: 70px 0;
+    background-color: gray;
+    transform: translateX(110%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+#menu.menu--active {
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    transform: translateX(0);
+}
+
+.menu__list {
+    padding: 15px 10px;
+}
+
+.logo {
+    width: 130px;
+    display: block;
+    padding: 0 15px;
+}
+
+
+.menu__link {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #fff;
+    padding: 20px 0;
+    transition: border .2s ease;
+}
+
+.menu__link:hover {
+    color: var(--color-primary);
+    border-bottom: solid 1px var(--color-primary);
+}
+
+#btn__open, #btn__close {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#btn__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 9px 0;
+}
+
+i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.body--no-scroll {
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .header__navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        max-width: 1700px;
+        margin: auto;
+    }
+    #menu {
+        position: static;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        transform: translateX(0);
+        background-color: transparent;
+        padding: 0px;
+        gap: 30px;
+    }
+    #btn__open, #btn__close {
+        display: none;
+    }
+}

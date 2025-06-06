@@ -1,0 +1,185 @@
+/* ----- Inicio -Enlace de Fuente tipográfica Montserrat ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ----- Fin -Enlace de Fuente tipográfica Montserrat ----- */
+
+@import url(header.css);
+@import url(banner.css);
+@import url(nosotros.css);
+@import url(servicios.css);
+@import url(atencion.css);
+@import url(noticias-otros.css);
+@import url(contacto.css);
+@import url(footer.css);
+
+/* -----Inicio - Declaración de Variables----- */
+
+:root {
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-naranja: #ee7d15;
+    --color-gris-oscuro: #494949;
+    --color-gris-claro: #9b9b9b;
+}
+
+.span-negrita {
+	font-weight: bold;
+}
+
+.span-naranja {
+	color: var(--color-naranja);
+	font-weight: bold;
+}
+.span-negro {
+	color: var(--color-negro);
+}
+
+
+/* -----Fin - Declaración de Variables----- */
+
+
+/* -----Inicio - Reseteo de Estilos----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----Fin - Reseteo de Estilos----- */
+
+
+/* -----Inicio - Estilos del Body----- */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* -----Fin - Estilos del Body----- */
+
+
+/* -----Inicio - Estilos Generales----- */
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+h5 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+}
+section {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/*  */
+/* -----Inicio - Estilo para Formularios----- */
+
+.estilo__formulario-contenedor {
+    background-color: var(--color-blanco);
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 280px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px var(--color-negro);
+}
+
+.estilo__formulario label {
+    font-weight: bold;
+}
+
+.estilo__formulario input {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border: 1px solid var(--color-naranja);
+}
+
+.estilo__formulario input:focus {
+    outline: none;
+}
+
+.estilo__formulario textarea {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border: 1px solid var(--color-naranja);
+}
+
+.estilo__formulario textarea:focus {
+    outline: none;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+    box-shadow: 0 2px 3px var(--color-negro);
+    transition: border .3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    border: 1px solid var(--color-negro);
+}
+
+/* -----Fin - Estilo para Formularios----- */
+
+
+
+
+/* -----Inicio - Media Queries----- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.7em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Escritorio (769px en adelante) */
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* -----Fin - Estilos Generales----- */

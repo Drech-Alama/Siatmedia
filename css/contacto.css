@@ -1,0 +1,11 @@
+#contacto {
+    background-color: var(--color-naranja);
+    padding: 50px 0;
+}
+.contacto__subtitulo {
+    text-align: center;
+}
+.contacto__parrafo {
+    text-align: center;
+    color: var(--color-blanco);
+}

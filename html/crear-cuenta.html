@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <title>Crear Cuenta</title>
+</head>
+
+<body>
+    <!-- Inicio - Creación de Cuenta -->
+    <div class="contacto__contenedor">
+        <h2 class="contacto__subtitulo">CREAR CUENTA</h2>
+        <div class="estilo__formulario-contenedor">
+            <form class="estilo__formulario" action="registro.php" method="POST">
+                <label for="id-estudiante" class="contacto">ID</label><br>
+                <input type="text" name="id-estudiante" placeholder="001570599" class="contacto"><br>
+                <label for="nombre" class="contacto">Nombre</label><br>
+                <input type="text" name="nombre" placeholder="Juanito" class="contacto"><br>
+                <label for="apellido" class="contacto">Apellido</label><br>
+                <input type="text" name="apellido" placeholder="Alimaña Lara" class="contacto"><br>
+                <label for="correo" class="contacto">Correo</label><br>
+                <input type="email" name="correo" class="contacto" placeholder="1570599@senati.pe"><br>
+                <label for="contraseña" class="contacto">Contraseña</label><br>
+                <input type="password" name="contraesña" class="contacto" placeholder="********"><br>
+                <input type="submit" name="crear-cuenta" value="Registarse" class="boton1">
+                <input type="button" name="regresar" value="Regresar" class="boton1">
+            </form>
+        </div>
+    </div>
+    <!--Fin - Creación de Cuenta -->
+</body>
+
+</html>
