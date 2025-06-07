@@ -13,6 +13,7 @@
 .nosotros__parrafo {
 	color: var(--color-blanco);
 	margin: 3em 20px;
+	text-align: center;
 }
 .nosotros__contenedor {
 	display: flex;
