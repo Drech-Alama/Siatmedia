@@ -1,6 +1,7 @@
 #atencion {
+    padding: 30px 0;
     text-align: center;
-    background-color: var(--color-blanco);
+    background-color: #f1f1f1;
 }
 .atencion__contenedor {
     display: flex;
@@ -17,7 +18,7 @@
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 15px var(--color-negro);
+    box-shadow: 0 0 15px var(--color-naranja);
 }
 
 .atencion__img {

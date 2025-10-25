@@ -1,7 +1,7 @@
 #noticias-otros{
     text-align: center;
     color: var(--color-naranja);
-    background-color: var(--color-blanco);
+    background-color: #f1f1f1;
     padding: 25px 0;
 }
 .noticias-otros__contenedor {

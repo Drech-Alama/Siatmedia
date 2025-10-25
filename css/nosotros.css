@@ -1,17 +1,17 @@
 /* -----Inicio - Estilos de Nosotros----- */
 
 #nosotros {
-	background-color: var(--color-naranja);
+	background-color: #f1f1f1;
 	padding: 120px 0;
 }
 
 .nosotros__h2 {
-	color: var(--color-blanco);
+	color: var(--color-naranja);
 	text-align: center;
 }
 
 .nosotros__parrafo {
-	color: var(--color-blanco);
+	color: var(--color-negro);
 	margin: 3em 20px;
 	text-align: center;
 }
@@ -23,7 +23,7 @@
 .nosotros__img-descripcion {
 	width: 280px;
 	margin: 1.5em auto;
-	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: 7px 7px 10px rgba(215, 140, 0, 0.4);
 	border-radius: 10px;
 	overflow: hidden;
 }

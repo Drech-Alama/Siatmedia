@@ -68,7 +68,9 @@ button {
 }
 
 .menu__link:hover {
-    color: var(--color-primary);
+    color: var(--color-naranja);
+    text-decoration: underline;
+    transition: text ease;
     border-bottom: solid 1px var(--color-primary);
 }
 

@@ -1,7 +1,7 @@
 #servicios {
     padding: 120px 0;
     text-align: center;
-    background: linear-gradient(var(--color-naranja) 50%, var(--color-gris-claro));
+    background-color: var(--color-naranja);
 }
 
 #servicios h2 {
